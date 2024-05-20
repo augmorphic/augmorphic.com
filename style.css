@@ -1,0 +1,64 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255); /* Match the background color */
+}
+
+.centered-container {
+    padding-top: 100px;
+    text-align: center;
+}
+
+html, body, div, p {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+}
+
+.shimmer {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(60deg,
+        rgba(110, 65, 170, .75),
+        rgba(210, 63, 167, .75),
+        rgba(255, 95, 100, .75),
+        rgba(239, 167, 48, .75),
+        rgba(62, 232, 111, .75),
+        rgba(27, 199, 194, .75),
+        rgba(66, 125, 224, .75),
+        rgba(27, 199, 194, .75),
+        rgba(62, 232, 111, .75),
+        rgba(239, 167, 48, .75),
+        rgba(255, 95, 100, .75),
+        rgba(210, 63, 167, .75),
+        rgba(110, 65, 170, .75)
+        );
+
+    background-size: 200% auto;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 5s infinite;
+    animation-delay: 3s;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.contact {
+    font-size: 16px;
+    text-align: center;
+    color: #606060;
+}
